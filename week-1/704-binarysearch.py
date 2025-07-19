@@ -29,9 +29,9 @@ def search(nums, target):
         if nums[mid] == target:
             return mid
         elif nums[mid] < target:        # move left pointer up to eliminate all left of mid
-            l = l + 1
+            l = mid + 1
         else:
-            r = r - 1
+            r = mid - 1
             
     return -1                           # not found
 
